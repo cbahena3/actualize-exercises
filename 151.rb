@@ -38,4 +38,4 @@ def print_lyrics
     puts "I'll tell you how I became the prince of a town called Bel-Air"
   end
 
-puts print_lyrics
+print_lyrics
