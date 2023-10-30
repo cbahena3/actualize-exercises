@@ -6,7 +6,7 @@ puts 2 + 2
 puts 300 - 270
 puts 3 * 4
 puts 1966 / 2
-
+puts 300000/100 #for practice
 
 
 
