@@ -1,9 +1,6 @@
 # QUESTION 1
 # Revise the Song class so that it reflects idiomatic Ruby conventions.
 
-# QUESTION 1
-# Revise the Song class so that it reflects idiomatic Ruby conventions.
-
 class Song
 attr_reader(:title, :artist, :lyrics)
 attr_writer(:title, :artist, :lyrics)
