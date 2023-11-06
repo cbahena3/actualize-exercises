@@ -35,16 +35,15 @@ class Person
 # First explain what the error message means, 
 # then fix the code by modifying only the line marked # FIX THIS LINE.
 # (This one is quite tricky!)
-class Product
+  class Product
     attr_reader :name, :price, :description
   
-    def initialize(name, price, description)
-      @name = name
-      @price = price
-      @description = description
+    def initialize(options_hash)
+      @name = options_hash["name"]
+      @price = options_hash["price"]
+      @description = options_hash["description"]
     end
   end
-  
-  product = Product.new("Table", 500, "Solid oak") # FIX THIS LINE 
+  product = Product.new("Table") # FIX THIS LINE 
   # wrong number of arguments (given 3, expected 1), only options_hash was given there are 2 arguements missing
   puts "The product's name is #{product.name}."
