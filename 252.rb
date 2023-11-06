@@ -3,10 +3,10 @@
 # Then run the method and print the result. 
 # (Note: you do not need to make a custom class for this exercise, just a method)
 def theNums(one, two, three, four)
-    sum = 1 + 2 + 3 + 4
+    sum = one + two + three + four
     puts sum
 end
-theNums(1, 2, 3, 4)
+theNums(11, 100, 3, 4)
 
 # QUESTION 2
 # Write a class called Shoe that stores attributes for name, color, and price.
