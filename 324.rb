@@ -4,24 +4,41 @@
 
 # QUESTION 1
 # Start your program with the line of code below.
-# The rest of your program should create and print out 
-# an array that removes all duplicates from the original array. 
+# The rest of your program should create and print out
+# an array that removes all duplicates from the original array.
 # That is, the second array should look like: [4, 6, 1, 2, 8, 3, 7]
 # The one catch: Don't use the "uniq" method available to arrays! (That would do this for you.)
-
 numbers = [4, 6, 1, 4, 2, 8, 3, 4, 1, 7]
 
-#create new array
-newArray = []
+#create a new array
+newNumbers = []
 
-#create loop that adds to newArray and prints it
-index = 0
-while index < numbers.length
-    newArray.push(numbers[index])
-    index = index + 1
+#create a loop to print each number at a time
+# index = 0
+# while index < numbers.length
+#   puts numbers[index]
+#   index = index + 1
+# end
+
+#Loop through the numbers and print "duplicate" if any numbers are equal to the first number.
+# index = 0
+# while index < numbers.length
+#  if numbers[index] == numbers[0]
+#   puts "duplicate #{numbers [0]}"
+#  else
+#   puts numbers[index]
+#  end
+# index = index + 1
+# end                     #Three dupes found for the first number
+
+#Answer
+numbers = [4, 6, 1, 4, 2, 8, 3, 4, 1, 7]
+result = []
+
+numbers.each do |num|
+  if !result.include?(num)
+    result << num
+  end
 end
-pp newArray
 
-
-
-#i tried doing a loop with conditionals but could not figure it out
+puts result
