@@ -29,3 +29,5 @@ puts "Your ticket price: $#{ticketPrice}."
 # Were you able to easily solve the problem from memory?
 # If so, describe the next skill you will start to practice tomorrow.
 # If not, describe the part you got stuck on that requires more practice.
+# I was having issues nesting the conditional inside of the elsif on line 19, I had to look at the answer to
+# figure out what I had done wrong. I will continue to practice conditionals.
