@@ -11,7 +11,7 @@
 numbers = [4, 6, 1, 4, 2, 8, 3, 4, 1, 7]
 
 #create a new array
-newNumbers = []
+# newNumbers = []
 
 #create a loop to print each number at a time
 # index = 0
@@ -33,12 +33,12 @@ newNumbers = []
 
 #Answer
 numbers = [4, 6, 1, 4, 2, 8, 3, 4, 1, 7]
-result = []
+newNumbers = []
 
-numbers.each do |thisIsAnIdividualNumber|
-  if !result.include?(thisIsAnIdividualNumber)
-    result << thisIsAnIdividualNumber
+numbers.each do |i|
+  if !newNumbers.include?(i)
+    newNumbers << i
   end
 end
 
-pp result
+pp newNumbers
