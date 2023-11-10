@@ -35,10 +35,10 @@ newNumbers = []
 numbers = [4, 6, 1, 4, 2, 8, 3, 4, 1, 7]
 result = []
 
-numbers.each do |num|
-  if !result.include?(num)
-    result << num
+numbers.each do |thisIsAnIdividualNumber|
+  if !result.include?(thisIsAnIdividualNumber)
+    result << thisIsAnIdividualNumber
   end
 end
 
-puts result
+pp result
