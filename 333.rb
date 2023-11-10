@@ -29,14 +29,31 @@
 # puts "You chose: #{yourNum}"
 
 # find average of numbers (Also the final answer)
+# yourNum = []
+# 5.times do
+#   puts "Enter a number: "
+#   number = gets.chomp.to_i
+#   yourNum.push(number)
+# end
+# puts "You chose: #{yourNum}"
+
+# sum = yourNum.sum
+# average = sum / yourNum.length
+# puts "Your average is #{average}"
+
+
 yourNum = []
+index = 0
+sum = 0
 5.times do
   puts "Enter a number: "
   number = gets.chomp.to_i
   yourNum.push(number)
+  while index < yourNum.length
+    sum = sum + yourNum[index]
+    index = index + 1
+  end
 end
-puts "You chose: #{yourNum}"
-
-sum = yourNum.sum
+puts sum
 average = sum / yourNum.length
 puts "Your average is #{average}"
