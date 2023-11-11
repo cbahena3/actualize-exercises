@@ -9,12 +9,12 @@
 
 #write a method
 # def hello (num)
-#   num
+#   puts num
 # end
-# puts hello(1)
+# hello(1)
 
 #write a conditional for roman numerals
-# number = 1
+# number = gets.chomp.to_i
 # if number == 1
 #   puts "Your roman numeral for #{number} is: I "
 # elsif number == 2
@@ -41,29 +41,101 @@
 #   index = index + 1
 # end
 
-# write an hash for romans
-romans = Hash.new()
-romans[1] = "I"
-romans[2] = "II"
-romans[3] = "III"
-romans[4] = "IV"
-romans[5] = "V"
-pp romans
+# loop and conditionals w/ a hash
+# puts "Enter your number: "
+# number = gets.chomp.to_i
+# romans = {1 => "I", 2 => "II", 3 => "III",
+# 4 => "IV", 5 => "V", 6 => "VI", 7 => "VII",
+# 8 => "VIII", 9 => "IX", 10 => "X"}
+# index = 0
+# while index < romans.length
+#   if number == 1
+#     puts "Your roman number is: #{romans[number]}"
+#     break
+#   elsif number == 2
+#     puts "Your roman number is: #{romans[number]}"
+#     break
+#   elsif number == 3
+#     puts "Your roman number is: #{romans[number]}"
+#     break
+#   elsif number == 4
+#     puts "Your roman number is: #{romans[number]}"
+#     break
+#   elsif number == 5
+#     puts "Your roman number is: #{romans[number]}"
+#     break
+#   elsif number == 6
+#     puts "Your roman number is: #{romans[number]}"
+#     break
+#   elsif number == 7
+#     puts "Your roman number is: #{romans[number]}"
+#     break
+#   elsif number == 8
+#     puts "Your roman number is: #{romans[number]}"
+#     break
+#   elsif number == 9
+#     puts "Your roman number is: #{romans[number]}"
+#     break
+#   elsif number == 10
+#     puts "Your roman number is: #{romans[number]}"
+#     break
+#   else
+#     puts "You broke me."
+#     break
+#   end
+#   index = index + 1
+# end
 
-# method
-def yourRoman(num)
-  if num == 1
-      puts "Your roman numeral for #{num} is: #{romans[1]} "
-    elsif num == 2
-      puts "Your roman numeral for #{num} is: #{romans[2]}  "
-    elsif num == 3
-      puts "Your roman numeral for #{num} is: #{romans[3]}  "
-    elsif num == 4
-      puts "Your roman numeral for #{num} is: #{romans[4]}  "
-    elsif num == 5
-      puts "Your roman numeral for #{num} is: #{romans[5]}  "
-    else
-      "Error"
-    end
-  end
-end
+
+
+
+# # method for romans
+# def yourRoman()
+#   puts "Enter your number: "
+#   number = gets.chomp.to_i
+#   romans = {1 => "I", 2 => "II", 3 => "III",
+#   4 => "IV", 5 => "V", 6 => "VI", 7 => "VII",
+#   8 => "VIII", 9 => "IX", 10 => "X"}
+#   index = 0
+#   while index < romans.length
+#     if number == 1
+#       puts "Your roman number is: #{romans[number]}"
+#       break
+#     elsif number == 2
+#       puts "Your roman number is: #{romans[number]}"
+#       break
+#     elsif number == 3
+#       puts "Your roman number is: #{romans[number]}"
+#       break
+#     elsif number == 4
+#       puts "Your roman number is: #{romans[number]}"
+#       break
+#     elsif number == 5
+#       puts "Your roman number is: #{romans[number]}"
+#       break
+#     elsif number == 6
+#       puts "Your roman number is: #{romans[number]}"
+#       break
+#     elsif number == 7
+#       puts "Your roman number is: #{romans[number]}"
+#       break
+#     elsif number == 8
+#       puts "Your roman number is: #{romans[number]}"
+#       break
+#     elsif number == 9
+#       puts "Your roman number is: #{romans[number]}"
+#       break
+#     elsif number == 10
+#       puts "Your roman number is: #{romans[number]}"
+#       break
+#     else
+#       puts "You broke me."
+#       break
+#     end
+#     index = index + 1
+#   end
+# end
+# yourRoman
+
+#on the last method i sort of got it to work but only with numbers 1-10
+#i could not figure out what else to use so I can do a larger set of numbers
