@@ -7,3 +7,8 @@
 # there are 3 total numbers (7, 2, and 9) in the string.
 
 
+myWords = "ds34fr23432 is a short sentence."
+
+short = myWords.scan(/\d/)
+totalNumFound = short.length
+puts totalNumFound
