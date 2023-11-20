@@ -1,0 +1,10 @@
+/* customize the <h1> element's color,
+background color,
+and font properties */
+
+h1 {
+    color:aqua;
+    background-color: tan;
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+}
